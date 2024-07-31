@@ -1,1 +1,80 @@
+
+# OS generated files
 .DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+
+# PHP Composer dependencies
+vendor/
+
+# PHPStorm project files
+.idea/
+
+# Laravel specific
+/vendor/
+/node_modules/
+.env
+.phpunit.result.cache
+/storage/
+Homestead.yaml
+Homestead.json
+
+# Symfony specific
+/var/
+/vendor/
+/.env.local
+.phpunit.result.cache
+
+# CakePHP specific
+/tmp/
+/logs/
+/webroot/
+config/.env
+
+# Other files and directories
+/.env          # Environment variables file
+/coverage/     # Test coverage reports
+/build/        # Build directory
+/cache/        # Cache directory
+/private/      # Private files
+/secret/       # Secret files
+/logs/         # Log files
+/sessions/     # Session files
+/backups/      # Backup files
+/test-reports/ # Test reports
+
+# Composer related files
+composer.phar
+composer.lock
+
+# Local configuration files
+.env.local
+.env.*.local
+.env.phpunit
+
+# IDE specific files
+/.idea/
+/*.sublime-project
+/*.sublime-workspace
+/.vscode/
+
+# Log files
+*.log
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
+*.old
+
+# PHPUnit
+phpunit.xml
+phpunit.xml.dist
+phpunit.result.cache
+
+# Backup files
+*.bak
+*.bkp
+*.backup

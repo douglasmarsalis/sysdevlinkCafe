@@ -19,7 +19,7 @@
     <header>
         <h1>Puchi カフェ</h1>
         <p>Thank you for registering!</p>
-        <button onclick="scrollToTop()">Go to Top</button>
+        <button onclick="window.location.href='index.php'">Home</button>
     </header>
     <main>
         <h2>Registration Successful</h2>
@@ -27,20 +27,13 @@
         <p>Your membership registration has been sent to your mobile phone.</p>
         <p>We have sent a short email with information.</p>
         <p>Please cliick the url within 24 hours after receiving the email.</p>
-        <p>Membership registration is not completed on this screen!</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <button onclick="scrollToTop()">Go to Top</button>
+        <p style="color: darkred">Membership registration is not completed on this screen!</p>
+        <p>If your mobile number is already registered, no information will be sent.</p>
+        <p>If you do not receive an email, please check here.</p>
+        <button onclick="window.location.href='index.php'">Home</button>
     </main>
     <footer>
         <p>&copy; 2024 SysDevLink. All rights reserved.</p>
     </footer>
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-    </script>
 </body>
 </html>
