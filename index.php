@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Delicious pizzas and waffles takeout from Puchi coffee shop">
-    <meta name="ketwords" content="pizza, waffles, coffee, tea, take out, cafe, Puchi">
-    <link rel="stylesheet" href="css/styles.css">   
-    <title>Puchi</title>
+     <meta name="description" content="プチコーヒーショップの美味しいピザとワッフルのテイクアウト">
+    <meta name="ketwords" content="ピザ、ワッフル、コーヒー、紅茶、テイクアウト、カフェ、プチ">
+    <link rel="stylesheet" href="assets/css/styles.css">   
+    <title>Puchi カフェ</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
             <div class="section-title">Home Page</div>
             <div class="product">
                 <div class="product-left">
-                    <img src="" alt="">
+                    <img src="assets/images/dummyData.jpg" alt="">
                 </div>
                 <div class="product-right">
                     <p class="title">
