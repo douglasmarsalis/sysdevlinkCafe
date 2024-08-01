@@ -10,8 +10,8 @@
 </head>
 <body>        
     <header>
-        <a class="top-btn" href="#" onclick="scrollToTop()">Top</a>
-        <h2 class="member-title">会員情報入力</h2>
+        <a class="top-btn" href="register-login.php" onclick="scrollToTop()">Top</a>
+        <h3 class="member-title">会員情報入力</h3>
     </header>
     <main>
     <div class="container">
@@ -97,18 +97,22 @@
                 <label for="agree">上記会員規約に同意する。<span style="color: red;">*</span></label>
             <p style="color: darkred">※会員規約に同意し会員登録するには、チェックボックスにチェックを入れてください。</p>
             </div><br />
-            <div class="form-group">
-                <button type="submit">登録</button>
-            </div><br /><br />
         </form>
+        <div class="btn">
+            <button class="sucess-btn" onclick="goToPage()">登録</button>
+        </div><br /><br />
     </div>
         <footer>
             <p style="position: fixed; bottom: 0; text-align: center">&copy; 2024 SysDevLink. All rights reserved.</p>
         </footer>
     </main>
-        <script>
+    <script>
         function scrollToTop() {
             window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function goToPage() {
+            window.location.href="register-success.php";
         }
     </script>
 </body>

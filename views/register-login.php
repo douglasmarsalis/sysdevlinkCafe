@@ -1,26 +1,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Delicious pizzas and waffles takeout from Puchi coffee shop">
-    <meta name="ketwords" content="pizza, waffles, coffee, tea, take out, cafe, Puchi">
+    <meta name="description" content="プチコーヒーショップの美味しいピザとワッフルのテイクアウト">
+    <meta name="ketwords" content="ピザ、ワッフル、コーヒー、紅茶、テイクアウト、カフェ、プチ">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Puchi カフェ</title>
-    <style>
-        footer {
-            position: fixed;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Pochi カフェ</h1>
-        <button onclick="window.location.href='../index.php'">Home</button>
+        <a onclick="window.location.href='../index.php'">プチ珈琲館</a>
+        <h3 class="top-title">Top</h3>
     </header>
     <main>
-        <div style="border: 2px solid black; width: 200px; height: 400px " class="register-login-container">
+        <div style="border: 2px solid black; width: 200px; height: 200px " class="register-login-container">
             <div class="auth-buttons">
-                <button onclick="window.location.href='register.php'">Register a New Member</button>
-                <button onclick="window.location.href='login.php'">Login</button>
+                <button onclick="window.location.href='register.php'">新規会員登録をする。</button>
+                <button onclick="window.location.href='login.php'">ログイン</button>
             </div>
         </div>
     </main>

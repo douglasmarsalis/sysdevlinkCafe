@@ -7,37 +7,36 @@
     <meta name="ketwords" content="ピザ、ワッフル、コーヒー、紅茶、テイクアウト、カフェ、プチ">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Puchi カフェ</title>
-    <style>
-        footer {
-            position: fixed;
-            bottom: 0;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Puchi カフェ</h1>
-        <button onclick="window.location.href='../index.php'">Home</button>
+        <a class="top-btn" href="register-login.php" onclick="scrollToTop()">Top</a>
+        <h3 class="register-title">会員登録メールの送信</h3>
     </header>
     <main>
-        <h2>Register New Member</h2>
-        <p class="register-info">Used as an ID for member login authentification.</p>
-        <p class="register-info">Please enter your mobile number.</p>
-        <p class="register-info">We will send you a short email for membership registration.</p>
+        <p class="register-info">会員ログイン認証時のIDとして利用する、</p>
+        <p class="register-info">携帯番号を入力してください。</p>
+        <p class="register-info">会員登録用ショートメールをお送りします。</p>
 
         <form id="registrationForm">
-            <label for="phone">Phone Number:</label> <br />
-            <input type="tel" id="phoneNumber" placeholder="Enter your cell phone number" required> <br /><br />
+            <label for="phone">携帯番号</label>
+            <input type="tel" id="phoneNumber" placeholder="oooooooOooO" required> <br /><br />
 
-            <label for="authCode">Confirm Number:</label> <br />
-            <input type="tel" id="authCode" placeholder="Confirm your cell phone number" required> <br /><br />
+            <label for="authCode">確認用携帯番号</label>
+            <input type="tel" id="authCode" placeholder="oooooooOooO" required> <br />
 
-            <button type="button" onclick="register()">Send Membership Registration Email</button>
+            <p class="register-info">確認のため、同じ携帯番号を入力してください。</p>
+
+            <button type="button" onclick="register()">会員登録用メールを送信する</button>
         </form>
     </main>
-    <footer>
-        <p>&copy; 2024 SysDevLink. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p style="position: fixed; bottom: 0; text-align: center">&copy; 2024 SysDevLink. All rights reserved.</p>
+        </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
