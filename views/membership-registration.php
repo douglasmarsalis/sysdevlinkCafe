@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Puchi カフェ</title>
 </head>
-<body>
-     <?php include "../includes/nav.php" ?>
+<body>        
+    <header>
+        <a class="top-btn" href="#" onclick="scrollToTop()">Top</a>
+        <h2 class="member-title">会員情報入力</h2>
+    </header>
     <main>
     <div class="container">
-        <h2>新規会員登録</h2>
+        <h3 class="member-reg">新規会員登録</h3>
         <p>新規会員登録のため、下記の必要な項目を入力してください。</p>
         <form action="#" method="POST">
             <div class="form-group">
@@ -47,7 +50,7 @@
                 <p style="color: darkred;">※確認のため、同じパスワードを入力ください。</p>
             </div><br />
             <div class="form-group">
-                <label for="terms">会員規約</label>
+                <label for="terms"></label>
                 <p class="terms">ご登録の前に､会員規約を必ずご覧ください｡会員登録が完了した時点で､この規約に同意いただいたものとします｡</p>
                 <textarea style="height: 200px; width: 350px" name="terms" readonly>
 会員登録に関する利用規約
@@ -103,6 +106,11 @@
             <p style="position: fixed; bottom: 0; text-align: center">&copy; 2024 SysDevLink. All rights reserved.</p>
         </footer>
     </main>
+        <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
 
