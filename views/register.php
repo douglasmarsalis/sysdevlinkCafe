@@ -17,9 +17,8 @@
     </header>
     <main>
         <div class="register-container">
-            <p class="register-info">会員ログイン認証時のIDとして利用する、</p>
-            <p class="register-info">携帯番号を入力してください。</p><br/>
-            <p class="register-info">会員登録用ショートメールをお送りします。</p>
+            <p class="register-info">会員ログイン認証時のIDとして利用する、携帯番号を入力してください。</p>
+            <p class="register-info">会員登録用ショートメールをお送りします。</p><br />
 
             <form id="registrationForm">
                 <label for="phone">携帯番号</label>

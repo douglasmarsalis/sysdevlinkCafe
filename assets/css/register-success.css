@@ -1,18 +1,19 @@
 /* General styles */
 /*一般的なスタイル*/
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-/* Register and Login Page - register-login.php*/
-/* 登録とログインページ */
+/* Register Success Message - register-success.php*/
+/*登録成功メッセージ*/
 
-/*Header*/
+/* Header styles */
 /*ヘッダ*/
-.register-login-header {
+.register-success-header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -27,69 +28,63 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.register-login-header a {
+.register-success-header a {
     color: white;
     text-decoration: underline;
     font-size: 18px;
     font-weight: bold;
 }
 
-.top-title {
+.register-success-title {
     flex: 1;
-    padding-left: 60px;
+    padding-left: 5px;
     margin: 0;
     font-size: 18px;
     color: white;
 }
 
-/* Main Container*/
-/*メインコンテナ*/
-.register-login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
- 
-/* Box styles */
-/*ボックススタイル*/
-.register-login-container > div {
-    border: 1px solid black;
-    width: 100%;
-    max-width: 300px;
-    margin: 60px 20px;
-    padding: 100px 50px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Main content styles */
+main {
+    margin-top: 100px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+}
+
+.reg-success-container  {
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    text-align: left; /* Ensures paragraphs are left-aligned */
+}
+
+.reg-success-container h4 {
+    font-style: bold;
+}
+
+.warning {
+    font-style: bold;
+    color: darkred;
+}
+
+.reg-success-container p {
+    margin: 10px 0;
 }
 
 /* Button styles */
 /*ボタンスタイル*/
-.reg-login-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.reg-login-buttons button {
-    width: 100%;
-    padding: 10px;
+.bottom-btn {
+    margin-top: 20px;
+    color: black;
+    text-decoration: underline;
     font-size: 16px;
-    color: white;
-    background-color: #7b3e19;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    text-align: center;
-}
-
-.reg-login-buttons button:hover {
-    background-color: #b28b84;
 }
 
 /*Footer*/

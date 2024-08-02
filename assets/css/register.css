@@ -1,4 +1,5 @@
 /* General styles */
+/*一般的なスタイル*/
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,9 @@
 
 /* Register Phone Number and Email to User - register.php*/
 /* ユーザーに電話番号とメールアドレスを登録する */
+
+/*Header*/
+/*ヘッダ*/
 .register-header {
     display: flex;
     align-items: center;
@@ -39,26 +43,36 @@
 }
 
 /* Register container styles */
+/*コンテナスタイルを登録する*/
 .register-container {
     display: flex;
     flex-direction: column; /* Arrange elements in a column */
     align-items: center; /* Center items horizontally */
     padding: 15px;
-    background-color: lightblue; /* Light background color for contrast */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border: 1px solid black;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     width: 90%;
     max-width: 360px; /* Restrict maximum width for better mobile appearance */
-    margin: 60px auto; /* Center container horizontally */
+    margin: 100px auto; /* Center container horizontally */
 }
 
 /* Paragraph and label styles */
+/*段落とラベルのスタイル*/
 .register-info {
     margin: 10px 0; /* Spacing between paragraphs */
     text-align: left; /* Center text */
 }
 
+/*All Paragraphs*/
+/*すべての段落*/
+p {
+    font-size: 15.5px;
+}
+
 /* Form styles */
+/*フォームスタイル*/
 #registrationForm {
     display: flex;
     flex-direction: column; /* Arrange form elements in a column */
@@ -66,6 +80,7 @@
 }
 
 /* Input and button styles */
+/*入力とボタンのスタイル*/
 input[type="tel"] {
     width: 100%;
     padding: 10px;
@@ -75,6 +90,8 @@ input[type="tel"] {
     border-radius: 5px; /* Rounded corners for inputs */
 }
 
+/*Button*/
+/*ボタン*/
 button {
     width: 100%;
     padding: 10px;
@@ -92,6 +109,7 @@ button:hover {
 }
 
 /*Footer*/
+/*フッター*/
 footer {
     display: flex;
     justify-content: center;

@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="プチコーヒーショップの美味しいピザとワッフルのテイクアウト">
     <meta name="ketwords" content="ピザ、ワッフル、コーヒー、紅茶、テイクアウト、カフェ、プチ">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/membership-registration.css">
     <title>Puchi カフェ</title>
 </head>
 <body>        
     <header>
-        <a class="top-btn" href="register-login.php" onclick="scrollToTop()">Top</a>
-        <h3 class="member-title">会員情報入力</h3>
+        <div class="membership-registration-header">
+            <a class="top-btn" href="register-login.php" onclick="scrollToTop()">TOP</a>
+            <h3 class="membership-registration-title">会員情報入力</h3>
+        </div>
     </header>
     <main>
-    <div class="container">
+    <div class="membership-registration-container">
         <h3 class="member-reg">新規会員登録</h3>
         <p>新規会員登録のため、下記の必要な項目を入力してください。</p>
         <form action="#" method="POST">
@@ -103,7 +105,7 @@
         </div><br /><br />
     </div>
         <footer>
-            <p style="position: fixed; bottom: 0; text-align: center">&copy; 2024 SysDevLink. All rights reserved.</p>
+            <p>&copy; 2024 SysDevLink. All rights reserved.</p>
         </footer>
     </main>
     <script>
