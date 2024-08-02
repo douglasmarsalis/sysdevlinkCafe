@@ -43,8 +43,8 @@
             <div class="form-group">
                 <label for="password">パスワード<span style="color: red;">*</span></label>
                 <input type="password" id="password" name="password" placeholder="パスワード" required>
-                <p style="color: darkred;">※アルファベットと数字を組み合わせた</p>
-                <p style="color: darkred;">8文字以上32文字以下の半角英数字で入力してください。</p>
+                <p class="warning">※アルファベットと数字を組み合わせた</p>
+                <p class="warning">8文字以上32文字以下の半角英数字で入力してください。</p>
             </div><br />
             <div class="form-group">
                 <label for="confirm-password">パスワード再入力<span style="color: red;">*</span></label>
@@ -97,11 +97,11 @@
             <div class="form-group checkbox">
                 <input type="checkbox" id="agree" name="agree" required>
                 <label for="agree">上記会員規約に同意する。<span style="color: red;">*</span></label>
-            <p style="color: darkred">※会員規約に同意し会員登録するには、チェックボックスにチェックを入れてください。</p>
+            <p class="warning">※会員規約に同意し会員登録するには、チェックボックスにチェックを入れてください。</p>
             </div><br />
         </form>
         <div class="btn">
-            <button class="sucess-btn" onclick="goToPage()">登録</button>
+            <button class="success-btn" onclick="goToPage()">登録</button>
         </div><br /><br />
     </div>
         <footer>
