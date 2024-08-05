@@ -94,7 +94,7 @@
 
                 </textarea>
             </div><br />
-            <div class="form-group checkbox">
+            <div class="form-group-checkbox">
                 <input type="checkbox" id="agree" name="agree" required>
                 <label for="agree">上記会員規約に同意する。<span style="color: red;">*</span></label>
             <p class="warning">※会員規約に同意し会員登録するには、チェックボックスにチェックを入れてください。</p>
@@ -104,17 +104,18 @@
             <button class="success-btn" onclick="goToPage()">登録</button>
         </div><br /><br />
     </div>
-        <footer>
-            <p>&copy; 2024 SysDevLink. All rights reserved.</p>
-        </footer>
     </main>
+    <footer>
+        <p>&copy; 2024 SysDevLink. All rights reserved.</p>
+    </footer>
+
     <script>
         function scrollToTop() {
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
         function goToPage() {
-            window.location.href="register-success.php";
+            window.location.href="complete.php";
         }
     </script>
 </body>
