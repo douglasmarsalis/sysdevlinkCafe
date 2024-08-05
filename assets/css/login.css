@@ -1,0 +1,119 @@
+/* General styles */
+/*一般的なスタイル*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Login Page - login.php*/
+/* ログインページ */
+
+/*Header*/
+/*ヘッダ*/
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #7b3e19;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 75px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-btn {
+    color: white;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-title {
+    flex: 1;
+    padding-left: 60px;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+/* Main content styles */
+main {
+    margin-top: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-message {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+/* Login container */
+.login-container {
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles */
+/*ボタンスタイル*/
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #7b3e19;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/*Footer*/
+/*フッター*/
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: none;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}

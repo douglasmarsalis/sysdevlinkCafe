@@ -6,7 +6,7 @@
     <meta name="description" content="プチコーヒーショップの美味しいピザとワッフルのテイクアウト">
     <meta name="ketwords" content="ピザ、ワッフル、コーヒー、紅茶、テイクアウト、カフェ、プチ">
     <link rel="stylesheet" href="../assets/css/complete.css">
-    <title>Puchi カフェ</title>
+    <title>プチ珈琲館</title>
 </head>
 <body>        
     <header>
@@ -21,7 +21,6 @@
         </div>
         <a class="bottom-btn" href="register-login.php" onclick="scrollToTop()">TOP へ</a>
     </main>
-
     <footer>
         <p style="position: fixed; bottom: 0; text-align: center">&copy; 2024 SysDevLink. All rights reserved.</p>
     </footer>

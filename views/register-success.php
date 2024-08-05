@@ -6,7 +6,7 @@
     <meta name="description" content="プチコーヒーショップの美味しいピザとワッフルのテイクアウト">
     <meta name="ketwords" content="ピザ、ワッフル、コーヒー、紅茶、テイクアウト、カフェ、プチ">
     <link rel="stylesheet" href="../assets/css/register-success.css">
-    <title>Puchi カフェ</title>
+    <title>プチ珈琲館</title>
 </head>
 <body>
     <header>
