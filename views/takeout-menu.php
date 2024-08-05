@@ -33,44 +33,44 @@
             <h2>* ワッフル</h2>
             <div class="items-container">
                 <div class="item-card">
-                    <img src="waffle1.jpg" alt="Waffle 1">
-                    <p class="item-name">チョコレートワッフル</p>
-                    <p class="item-price">¥500</p>
+                    <img src="/assets/images/DSC_0034.JPG" alt="Plain Waffle Image">
+                    <p class="item-name">プレーンワッフル</p>
+                    <p class="item-price">¥770</p>
                 </div>
                 <div class="item-card">
-                    <img src="waffle2.jpg" alt="Waffle 2">
-                    <p class="item-name">ベリーワッフル</p>
-                    <p class="item-price">¥600</p>
+                    <img src="/assets/images/sweets_001.jpg" alt="Strawberry Waffle Image">
+                    <p class="item-name">ストロベリーワッフル</p>
+                    <p class="item-price">¥770</p>
                 </div>
                                 <div class="item-card">
-                    <img src="waffle1.jpg" alt="Waffle 1">
+                    <img src="/assets/images/DSC00780 のコピー.jpg" alt="Cream Waffle Image">
+                    <p class="item-name">クリームワッフル</p>
+                    <p class="item-price">¥770</p>
+                </div>
+                <div class="item-card">
+                    <img src="/assets/images/sweets_002.jpg" alt="Blueberry Waffle Image">
+                    <p class="item-name">ブルーベリーワッフル</p>
+                    <p class="item-price">¥880</p>
+                </div>
+                <div class="item-card">
+                    <img src="/assets/images/DSC00780 のコピー.jpg" alt="Caramel Waffle Image">
+                    <p class="item-name">キャラメルワッフル</p>
+                    <p class="item-price">¥880</p>
+                </div>
+                <div class="item-card">
+                    <img src="/assets/images/DSC_0030.jpg" alt="Chocolate Waffle Image">
                     <p class="item-name">チョコレートワッフル</p>
-                    <p class="item-price">¥500</p>
+                    <p class="item-price">¥880</p>
                 </div>
                 <div class="item-card">
-                    <img src="waffle2.jpg" alt="Waffle 2">
-                    <p class="item-name">ベリーワッフル</p>
-                    <p class="item-price">¥600</p>
+                    <img src="/assets/images/DSC_0034.JPG" alt="Melon Waffle Image">
+                    <p class="item-name">マロンワッフル</p>
+                    <p class="item-price">¥880</p>
                 </div>
                 <div class="item-card">
-                    <img src="waffle1.jpg" alt="Waffle 1">
-                    <p class="item-name">チョコレートワッフル</p>
-                    <p class="item-price">¥500</p>
-                </div>
-                <div class="item-card">
-                    <img src="waffle2.jpg" alt="Waffle 2">
-                    <p class="item-name">ベリーワッフル</p>
-                    <p class="item-price">¥600</p>
-                </div>
-                                <div class="item-card">
-                    <img src="waffle1.jpg" alt="Waffle 1">
-                    <p class="item-name">チョコレートワッフル</p>
-                    <p class="item-price">¥500</p>
-                </div>
-                <div class="item-card">
-                    <img src="waffle2.jpg" alt="Waffle 2">
-                    <p class="item-name">ベリーワッフル</p>
-                    <p class="item-price">¥600</p>
+                    <img src="/assets/images/DSC_0038.JPG" alt="Ogura Waffle Image">
+                    <p class="item-name">小倉ワッフル</p>
+                    <p class="item-price">¥990</p>
                 </div>
                 <!-- Add more waffle items here -->
             </div>
@@ -78,46 +78,32 @@
 
         <section class="menu-section">
             <h2>* ピザ</h2>
+            <img src="/assets/images/bn02.png" alt="Pizza heading">
             <div class="items-container">
                 <div class="item-card">
-                    <img src="pizza1.jpg" alt="Pizza 1">
-                    <p class="item-name">マルゲリータ</p>
-                    <p class="item-price">¥800</p>
+                    <img src="/assets/images/img_001.jpg" alt="Mix Pizza Image">
+                    <p class="item-name">ミックスピザ</p>
+                    <p class="item-price">¥1320</p>
                 </div>
                 <div class="item-card">
-                    <img src="pizza2.jpg" alt="Pizza 2">
-                    <p class="item-name">ペパロニピザ</p>
-                    <p class="item-price">¥850</p>
+                    <img src="/assets/images/img_001.jpg" alt="Apara-Bacon Pizza Image">
+                    <p class="item-name">アスパラベーコン</p>
+                    <p class="item-price">¥1320</p>
                 </div>
                <div class="item-card">
-                    <img src="pizza1.jpg" alt="Pizza 1">
+                    <img src="/assets/images/img_001.jpg" alt="Margaritta Pizza Image">
                     <p class="item-name">マルゲリータ</p>
-                    <p class="item-price">¥800</p>
+                    <p class="item-price">¥1320</p>
                 </div>
                 <div class="item-card">
-                    <img src="pizza2.jpg" alt="Pizza 2">
-                    <p class="item-name">ペパロニピザ</p>
-                    <p class="item-price">¥850</p>
+                    <img src="/assets/images/img_001.jpg" alt="Seafood Mix Pizza Image">
+                    <p class="item-name">シーフードミックス</p>
+                    <p class="item-price">¥1320</p>
                 </div>
                 <div class="item-card">
-                    <img src="pizza1.jpg" alt="Pizza 1">
-                    <p class="item-name">マルゲリータ</p>
-                    <p class="item-price">¥800</p>
-                </div>
-                <div class="item-card">
-                    <img src="pizza2.jpg" alt="Pizza 2">
-                    <p class="item-name">ペパロニピザ</p>
-                    <p class="item-price">¥850</p>
-                </div>
-               <div class="item-card">
-                    <img src="pizza1.jpg" alt="Pizza 1">
-                    <p class="item-name">マルゲリータ</p>
-                    <p class="item-price">¥800</p>
-                </div>
-                <div class="item-card">
-                    <img src="pizza2.jpg" alt="Pizza 2">
-                    <p class="item-name">ペパロニピザ</p>
-                    <p class="item-price">¥850</p>
+                    <img src="/assets/images/img_001.jpg" alt="Bacon-Salami Pizza Image">
+                    <p class="item-name">ベーコンサラミ</p>
+                    <p class="item-price">¥1320</p>
                 </div>
                 <!-- Add more pizza items here -->
             </div>
