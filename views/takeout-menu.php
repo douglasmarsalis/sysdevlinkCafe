@@ -14,7 +14,7 @@
             <button class="dropbtn"><img src="/assets/images/dropdown.png" alt="Dropdown icon"></button>
             <div class="dropdown-content">
                 <a data-active="index" href="index.php">ホーム</a>
-                <a href="login.php">Register/Login</a>
+                <a href="login.php">登録とログイン</a>
             </div>
         </div>
         <div class="top-title-container">
