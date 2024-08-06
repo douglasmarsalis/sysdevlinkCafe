@@ -151,30 +151,6 @@
         <p>&copy; 2024 SysDevLink. All rights reserved.</p>
     </footer>
 
-    <script>
-
-        // Function for basket - click to go to page
-        function goToPage() {
-            window.location.href="cart.php";
-        }
-
-        // Function to update the cart indicator
-        function updateCartIndicator() {
-            var cartIndicator = document.querySelector('.cart-indicator');
-            var cartItemCount = getCartItemCount(); 
-
-            if (cartItemCount > 0) {
-                cartIndicator.classList.add('active');
-            } else {
-                cartIndicator.classList.remove('active');
-            }
-        }
-        function getCartItemCount() {
-            var cart = JSON.parse(localStorage.getItem('cart')) || [];
-            return cart.length;
-        }
-        document.addEventListener('DOMContentLoaded', updateCartIndicator);
-
-    </script>
+    <script src="../assets/javascript/takeout-menu.js"></script>
 </body>
 </html>
