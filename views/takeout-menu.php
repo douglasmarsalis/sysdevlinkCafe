@@ -13,15 +13,19 @@
         <div class="dropdown">
             <button class="dropbtn"><img src="/assets/images/dropdown.png" alt="Dropdown icon"></button>
             <div class="dropdown-content">
-                <a data-active="index" href="index.php">ホーム</a>
-                <a href="login.php">登録とログイン</a>
+                <a href="/">ホーム</a>
+                <a href="register-login.php">プチ珈琲館</a>
+                <a href="login.php">ログイン</a>
             </div>
         </div>
         <div class="top-title-container">
         <h3 class="top-title">プチ珈琲館</h3>
         <h3 class="top-title">テイクアウトメニュー</h3>
         </div>
-        <div class="basket"><img src="/assets/images/cart.png" alt="Basket Icon"></div>
+        <div class="basket" onclick="goToPage()">
+            <img src="/assets/images/cart.png" alt="Basket Icon">
+            <span class="cart-indicator"></span>
+        </div>
     </header>
 
     <main>
@@ -42,7 +46,7 @@
                     <p class="item-name">ストロベリーワッフル</p>
                     <p class="item-price">¥770</p>
                 </div>
-                                <div class="item-card">
+                <div class="item-card">
                     <img src="/assets/images/DSC00780 のコピー.jpg" alt="Cream Waffle Image">
                     <p class="item-name">クリームワッフル</p>
                     <p class="item-price">¥770</p>
@@ -110,27 +114,67 @@
         </section>
 
         <section class="menu-section">
-            <h2>* コーヒー</h2>
+            <h2>* コーヒ</h2>
             <img src="/assets/images/bn03.png" alt="Coffee heading">
-            <ul class="coffee-list">
-                <li><span>・ブレンド</span><span>¥300</span></li>
-                <li><span>・ブレンドストロング</span><span>¥350</span></li>
-                <li><span>・アメリカン</span><span>¥400</span></li>
-                <li><span>・ブルマンブレンド</span><span>¥250</span></li>
-                <li><span>・ブルーマウンテンNo,1</span><span>¥300</span></li>
-                <li><span>・モカ</span><span>¥350</span></li>
-                <li><span>・ブラジル</span><span>¥400</span></li>
-                <li><span>・コロンビア</span><span>¥250</span></li>
-                <li><span>・キリマンジャロ</span><span>¥300</span></li>
-                <li><span>・グァテマラ</span><span>¥350</span></li>
-                <li><span>・マンデリン</span><span>¥250</span></li>
+            <div class="items-container">
+                <div class="item-card">
+                    <img src="/assets/images/IMG_2164.PNG" alt="Coffee beans image">
+                    <p class="item-name">ブレンド</p>
+                    <p class="item-price">¥300</p>
+                </div>
+                <div class="item-card">
+                    <img src="/assets/images/IMG_2164.PNG" alt="ACoffee beans image">
+                    <p class="item-name">ブレンドストロング</p>
+                    <p class="item-price">¥350</p>
+                </div>
+               <div class="item-card">
+                    <img src="/assets/images/IMG_2164.PNG" alt="Coffee beans image">
+                    <p class="item-name">アメリカン</p>
+                    <p class="item-price">¥400</p>
+                </div>
+                <div class="item-card">
+                    <img src="/assets/images/IMG_2164.PNG" alt="Coffee beans image">
+                    <p class="item-name">ブルマンブレンド</p>
+                    <p class="item-price">¥250</p>
+                </div>
+                <div class="item-card">
+                    <img src="/assets/images/IMG_2164.PNG" alt="Coffee beans image">
+                    <p class="item-name">ブルーマウンテン>No,1</p>
+                    <p class="item-price">¥300</p>
+                </div>
                 <!-- Add more coffee items here -->
-            </ul>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 SysDevLink. All rights reserved.</p>
     </footer>
+
+    <script>
+
+        // Function for basket - click to go to page
+        function goToPage() {
+            window.location.href="cart.php";
+        }
+
+        // Function to update the cart indicator
+        function updateCartIndicator() {
+            var cartIndicator = document.querySelector('.cart-indicator');
+            var cartItemCount = getCartItemCount(); 
+
+            if (cartItemCount > 0) {
+                cartIndicator.classList.add('active');
+            } else {
+                cartIndicator.classList.remove('active');
+            }
+        }
+        function getCartItemCount() {
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+            return cart.length;
+        }
+        document.addEventListener('DOMContentLoaded', updateCartIndicator);
+
+    </script>
 </body>
 </html>
