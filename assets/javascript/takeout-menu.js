@@ -4,31 +4,31 @@ function goToPage() {
 
 
 // Function to update the cart indicator
-        // // Function to update the cart indicator
-        // function updateCartIndicator() {
-        //     var cartIndicator = document.querySelector('.cart-indicator');
-        //     var cartItemCount = getCartItemCount();
+// // Function to update the cart indicator
+// function updateCartIndicator() {
+//     var cartIndicator = document.querySelector('.cart-indicator');
+//     var cartItemCount = getCartItemCount();
 
-        //     console.log('Cart Item Count:', cartItemCount); // Debugging line
+//     console.log('Cart Item Count:', cartItemCount); // Debugging line
 
-        //     if (cartItemCount > 0) {
-        //         cartIndicator.classList.add('active');
-        //     } else {
-        //         cartIndicator.classList.remove('active');
-        //     }
-        // }
+//     if (cartItemCount > 0) {
+//         cartIndicator.classList.add('active');
+//     } else {
+//         cartIndicator.classList.remove('active');
+//     }
+// }
 
-        // // Function to get the cart item count from local storage
-        // function getCartItemCount() {
-        //     var cart = JSON.parse(localStorage.getItem('cart')) || [];
-        //     return cart.length;
-        // }
+// // Function to get the cart item count from local storage
+// function getCartItemCount() {
+//     var cart = JSON.parse(localStorage.getItem('cart')) || [];
+//     return cart.length;
+// }
 
-        // // Call updateCartIndicator on page load
-        // document.addEventListener('DOMContentLoaded', () => {
-        //     console.log('Document loaded'); // Debugging line
-        //     updateCartIndicator();
-        // });
+// // Call updateCartIndicator on page load
+// document.addEventListener('DOMContentLoaded', () => {
+//     console.log('Document loaded'); // Debugging line
+//     updateCartIndicator();
+// });
 
 
 
