@@ -168,12 +168,12 @@
     }
 
     .item-name {
-        font-size: 14px;
+        font-size: 0.8em !important;
         margin: 5px 0;
     }
 
     .item-price {
-        font-size: 14px;
+        font-size: 0.8em !important;
         color: #7b3e19;
     }
 
@@ -194,7 +194,7 @@
 
 .modal-content {
     background-color: #fff;
-    margin: 20% auto;
+    margin: 30% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
@@ -246,7 +246,7 @@
 #add-to-cart-btn {
     width: 100%;
     padding: 10px;
-    background-color: #ff4500;
+    background-color: #7b3e19;
     color: white;
     font-size: 0.9em;
     border: none;

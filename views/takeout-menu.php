@@ -161,7 +161,7 @@
             <p id="modal-message"></p>
             <div id="topping-choices" class="topping-choices"></div>
             <div class="quantity-container">
-                <label for="quantity">数量: </label>
+                <label for="quantity">・注文個数 </label>
                 <input type="number" id="quantity" name="quantity" min="1" value="1">
             </div>
             <button id="add-to-cart-btn"></button>

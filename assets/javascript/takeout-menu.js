@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            addToCartBtn.textContent = `Add to Cart - ${itemPrice}`;
+            addToCartBtn.textContent = `カートに追加 - ${itemPrice}`;
 
             modal.style.display = 'block';
         });
