@@ -151,6 +151,23 @@
         <p>&copy; 2024 SysDevLink. All rights reserved.</p>
     </footer>
 
+    <!-- Modal structure -->
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Item Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-message"></p>
+            <div id="topping-choices" class="topping-choices"></div>
+            <div class="quantity-container">
+                <label for="quantity">数量: </label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            <button id="add-to-cart-btn"></button>
+        </div>
+    </div>
+
     <script src="../assets/javascript/takeout-menu.js"></script>
 </body>
 </html>

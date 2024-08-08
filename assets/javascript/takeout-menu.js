@@ -2,6 +2,7 @@ function goToPage() {
     window.location.href = "cart.php";
 }
 
+
 // Function to update the cart indicator
         // // Function to update the cart indicator
         // function updateCartIndicator() {
@@ -32,86 +33,108 @@ function goToPage() {
 
 
 
-// JavaScript to handle item-card click and redirect to cart.php with item details
+// JavaScript to handle item-card click and REDIRECT TO PAGE - to cart.php with item details
+// document.addEventListener('DOMContentLoaded', () => {
+//     const itemCards = document.querySelectorAll('.item-card');
+
+//     itemCards.forEach(card => {
+//         card.addEventListener('click', () => {
+//             const imgSrc = card.querySelector('img').src;
+//             const itemName = card.querySelector('.item-name').textContent;
+//             const itemPrice = card.querySelector('.item-price').textContent;
+
+//             window.location.href = `cart.php?imgSrc=${encodeURIComponent(imgSrc)}&itemName=${encodeURIComponent(itemName)}&itemPrice=${encodeURIComponent(itemPrice)}`;
+//         });
+//     });
+// });
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const itemCards = document.querySelectorAll('.item-card');
+    const modal = document.getElementById('item-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalName = document.getElementById('modal-name');
+    const modalPrice = document.getElementById('modal-price');
+    const modalMessage = document.getElementById('modal-message');
+    const toppingChoices = document.getElementById('topping-choices');
+    const quantityInput = document.getElementById('quantity');
+    const addToCartBtn = document.getElementById('add-to-cart-btn');
+    const span = document.getElementsByClassName('close')[0];
 
     itemCards.forEach(card => {
         card.addEventListener('click', () => {
             const imgSrc = card.querySelector('img').src;
             const itemName = card.querySelector('.item-name').textContent;
             const itemPrice = card.querySelector('.item-price').textContent;
+            const itemType = card.getAttribute('data-type');
+            const itemMessage = card.getAttribute('data-message');
 
-            window.location.href = `cart.php?imgSrc=${encodeURIComponent(imgSrc)}&itemName=${encodeURIComponent(itemName)}&itemPrice=${encodeURIComponent(itemPrice)}`;
+            modalImg.src = imgSrc;
+            modalName.textContent = itemName;
+            modalPrice.textContent = itemPrice;
+            modalMessage.textContent = itemMessage;
+
+            toppingChoices.innerHTML = '';
+
+            if (itemType === 'waffles' || itemType === 'pizza') {
+                const toppings = ['Option 1', 'Option 2', 'Option 3']; // Replace with actual toppings
+                toppings.forEach(topping => {
+                    const toppingDiv = document.createElement('div');
+                    toppingDiv.innerHTML = `
+                        <label>
+                            <input type="checkbox" name="topping" value="${topping}">
+                            ${topping}
+                        </label>
+                    `;
+                    toppingChoices.appendChild(toppingDiv);
+                });
+            }
+
+            addToCartBtn.textContent = `Add to Cart - ${itemPrice}`;
+
+            modal.style.display = 'block';
         });
     });
+
+    span.onclick = () => {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    addToCartBtn.addEventListener('click', () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const item = {
+            imgSrc: modalImg.src,
+            itemName: modalName.textContent,
+            itemPrice: modalPrice.textContent,
+            quantity: quantityInput.value
+        };
+        cart.push(item);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        modal.style.display = 'none';
+        updateCartIndicator();
+    });
+
+    function updateCartIndicator() {
+        const cartIndicator = document.querySelector('.cart-indicator');
+        const cartItemCount = getCartItemCount();
+        cartIndicator.textContent = cartItemCount;
+        if (cartItemCount > 0) {
+            cartIndicator.classList.add('active');
+        } else {
+            cartIndicator.classList.remove('active');
+        }
+    }
+
+    function getCartItemCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        return cart.length;
+    }
+
+    updateCartIndicator();
 });
-
-
-
-
-
-// Function for Pop-up window
-// document.addEventListener('DOMContentLoaded', () => {
-//     const itemCards = document.querySelectorAll('.item-card');
-
-//     itemCards.forEach(card => {
-//         card.addEventListener('click', () => {
-//             // Get the image source, item name, and item price
-//             const imgSrc = card.querySelector('img').src;
-//             const itemName = card.querySelector('.item-name').textContent;
-//             const itemPrice = card.querySelector('.item-price').textContent;
-
-//             // Open a popup window with the item details
-//             const popupWidth = 400;
-//             const popupHeight = 400;
-//             const left = (screen.width - popupWidth) / 2;
-//             const top = (screen.height - popupHeight) / 2;
-//             const popup = window.open('', '', `width=${popupWidth},height=${popupHeight},top=${top},left=${left}`);
-
-//             // Write content to the popup window
-//             popup.document.write(`
-//                 <html>
-//                 <head>
-//                     <title>Item Details</title>
-//                     <style>
-//                         body {
-//                             font-family: Arial, sans-serif;
-//                             text-align: center;
-//                             padding: 20px;
-//                         }
-//                         img {
-//                             max-width: 100%;
-//                             height: auto;
-//                         }
-//                         .item-name {
-//                             font-size: 20px;
-//                             margin-top: 10px;
-//                         }
-//                         .item-price {
-//                             font-size: 18px;
-//                             color: #7b3e19;
-//                             margin-top: 5px;
-//                         }
-//                         button {
-//                             margin-top: 20px;
-//                             padding: 10px 20px;
-//                             background-color: #7b3e19;
-//                             color: white;
-//                             border: none;
-//                             border-radius: 5px;
-//                             cursor: pointer;
-//                         }
-//                     </style>
-//                 </head>
-//                 <body>
-//                     <img src="${imgSrc}" alt="${itemName}">
-//                     <p class="item-name">${itemName}</p>
-//                     <p class="item-price">${itemPrice}</p>
-//                     <button onclick="window.close()">Close</button>
-//                 </body>
-//                 </html>
-//             `);
-//         });
-//     });
-// });
