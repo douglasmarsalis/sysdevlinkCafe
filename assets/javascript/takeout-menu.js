@@ -49,6 +49,8 @@ function goToPage() {
 // });
 
 
+
+    // First  Modal structure - Item Options
 document.addEventListener('DOMContentLoaded', () => {
     const itemCards = document.querySelectorAll('.item-card');
     const modal = document.getElementById('item-modal');
@@ -138,3 +140,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCartIndicator();
 });
+
+
+
+    // Second Modal Structure - Cart
+// document.getElementById('minus-btn').addEventListener('click', function() {
+//     var quantityInput = document.getElementById('quantity');
+//     var currentValue = parseInt(quantityInput.value);
+// })

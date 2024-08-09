@@ -151,7 +151,7 @@
         <p>&copy; 2024 SysDevLink. All rights reserved.</p>
     </footer>
 
-    <!-- Modal structure -->
+    <!--First  Modal structure - Item Options-->
     <div id="item-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -164,9 +164,78 @@
                 <label for="quantity">・注文個数 </label>
                 <input type="number" id="quantity" name="quantity" min="1" value="1">
             </div>
-            <button id="add-to-cart-btn"></button>
+            <button id="add-to-cart-btn"></button> <!--Adds to cart and Goes to Second Modal-->
         </div>
     </div>
+
+    <!--Second Modal Structure - Cart-->
+    <div id="second-item-modal" class="modal">
+        <div class="second-modal-content">
+            <h3 class=cart-title>カート(1点)</h3>
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Item Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-toppings-added"></p>
+            <div class="edit-quantity-container">
+                <p class="edit-title">編集</p> <!--Edit title only-->
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="minus-btn" type="button"><span>-</span></button>
+                <button id="plus-btn" type="button"><span>+</span></button>
+                <button id="delete-btn" type="button"><span>削除</span></button> <!--Deletes the item-->
+            </div>
+            <button class="back-to-menu-btn">他の商品を探す</button>  <!--Goes back to takeout-menu.php page-->
+            <button class="verify-btn">ご注文の手続きへ OR EDIT<span>-></span></button>  <!--Shows Added items inside button and Goes to Third Modal--> <!--RECOMMEND!!!!!!!NEED TO ADD EDIT TO BUTTON ALSO-->
+        </div>
+    </div>
+
+    <!--Third Modal Structure - Cart Stop or Proceed --> 
+    <div id="third-item-modal" class="modal">
+        <div class="third-modal-content">
+            <h3 class=cart-title>カート(1点)</h3>
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Item Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-toppings-added"></p>
+            <div class="stop-delete-container">
+                <p class="remove-msg"><span>カートから商品を削除してもよろしいですか?</span></p> <!--Message - are you sure you want to remove the item? -->
+                <button class="stop-btn">やめる</button>  <!--Stops current choice and removes it, Goes to Fifth Modal-->
+                <button class="delete-btn">削除</button> <!--Deletes check out and resets to zero Goes to Fourth Modal-->
+            </div>
+            <button class="checkout-btn">ご注文の手続きへ <span>-></span></button>  <!--Shows Added items inside button, Goes to cart.php -->
+        </div>
+    </div>  
+    
+
+    <!--Fourth Modal Structure - Delete Order -->
+    <div id="fourth-item-modal" class="modal">
+        <div class="fourth-modal-content">
+            <h3 class=cart-title>カート(0点)</h3>  <!--Shows Cart title and number of current items of zero-->
+            <span class="close">&times;</span>
+            <div class="back-to-menu-container">
+                <p class="delete-msg"><span>カートに商品がありません</span></p><!--Message - Nothing in cart -->
+                <button class="back-to-menu-btn">メニューを探す</button> <!--Goes back to takeout-menu.php page-->
+            </div>
+        </div>
+    </div> 
+
+    <!--Fifth Modal Structure - Current Order, Checkout or Back to Menu-->
+    <div id="fifth-item-modal" class="modal">
+        <div class="fifth-modal-content">
+            <h3 class=cart-title>Cart</h3> <!--Shows Cart title and number of current items-->
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Item Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-toppings-added"></p>
+            <div class="back-order-container">
+            <button class="back-to-menu-btn">他の商品を探す</button>  <!--Goes back to takeout-menu.php page-->
+            <button class="checkout-btn">ご注文の手続きへ <span>-></span></button>  <!--Shows Added items inside button, Goes to cart.php -->
+            </div>
+        </div>
+    </div> 
+
 
     <script src="../assets/javascript/takeout-menu.js"></script>
 </body>
